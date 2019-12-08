@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AddBook Program</title>
+
+    <!--bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!--foont awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--main styles-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-1">Add Book program</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- <button type="button" class="btn btn-dark" id="add-book">Add Book</button> -->
+        <form action="post" id="bookName">
+            <input type="text" class="form-control" placeholder="Add Book Name" id="inputName">
+            <input type="submit" class="btn btn-dark" value="Add">
+        </form>
+
+        <div class="container">
+            <ul id="books">
+            </ul>
+        </div>
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

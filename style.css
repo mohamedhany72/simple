@@ -1,0 +1,122 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+    background: #ffeaa7;
+    min-height: 80vh;
+    padding: 20px 0;
+}
+
+.jumbotron, .jumbotron-fluid{
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px){
+    .display-1{
+        font-size: 2em;
+    }
+}
+
+#books{
+    padding: 0;
+    margin: 20px auto;
+    width: 90%;
+    min-height: 400px;
+     
+    border: 2px solid #000;
+    -webkit-border-radius: 15px;
+       -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+         -o-border-radius: 15px;
+            border-radius: 15px;
+    background: rgb(9,132,227);
+    background: -moz-linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(129,236,236,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(129,236,236,1) 100%);
+    background: linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(129,236,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0984e3",endColorstr="#81ecec",GradientType=1);
+}
+
+#books li{
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+    font-size: 1.3em;
+}
+
+#books li:last-of-type{
+    border-bottom: none;
+}
+
+li span{
+    display: inline-block;
+    width: 85%;
+    text-align: left;
+    cursor: default;
+    opacity: 0.5;
+    transition: opacity 0.1s linear, text-shadow 0.4s linear;
+}
+
+li i{
+    width: 10%;
+    text-align: center;
+    color: #000;
+    
+    transition: color 0.2s linear, text-shadow 0.4s linear;
+}
+
+li i:hover, li i:focus, li i:active{
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+
+
+li span:hover, li span:focus, li span:active{
+    opacity: 1;
+    text-shadow: 0 0 10px  #fff;
+}
+
+
+
+/* form styling */
+#bookName{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-control{
+    width: 80%;
+    display: inline-block;
+}
+
+.btn{
+    vertical-align: baseline;
+    width: 15%;
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width: 767px){
+    .form-control{
+        display: block;
+        width: 100%;
+    }
+
+    .btn{
+        margin-top: 20px;
+        text-align: center;
+        width: 100px;
+    }
+
+    li span{
+        opacity: 1;
+    }
+}
